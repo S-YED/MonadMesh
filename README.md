@@ -121,9 +121,9 @@ git push origin feature/your-feature-name
 
 This project was built with ♥ by:
 
-- **Your Name** – [@s-yed](https://github.com/s-yed)  
-- **Collaborator 1** – [@drraghavendra](https://github.com/drraghavendra)  
-- **Collaborator 2** – [@scienmanas](https://github.com/scienmanas)
+- **SYED KHAJA MOINUDDIN** – [@s-yed](https://github.com/s-yed)  
+- **RAGHAVENDRA K** – [@drraghavendra](https://github.com/drraghavendra)  
+- **MANAS PODDAR** – [@scienmanas](https://github.com/scienmanas)
 
 We built MonadMesh during the [Monad Blitz Bangalore 2025](https://lu.ma/0k7yvinp?tk=8SHdBN) hackathon, and are continuing to evolve it for open-source and production deployment.
 
