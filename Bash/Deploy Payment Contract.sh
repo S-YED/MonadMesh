@@ -1,0 +1,1 @@
+forge create MonadPayments --constructor-args <TOKEN_ADDR> <MESH_ADDR> --rpc-url monad
