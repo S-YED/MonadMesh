@@ -135,16 +135,6 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> UserInDB:
         raise credentials_exception
     return UserInDB(**user)
 
-def create_wallet(password: str) -> Dict:
-    """Create a new Ethereum wallet with encrypted private key"""
-    acct = Account.create()
-    encrypted_key = Account.encrypt(acct.key.hex(), password)
-    return {
-        "address": acct.address,
-        "private_key": encrypted_key,
-        "balance": 0.0
-    }
-
 def sign_message(private_key: str, message: str) -> str:
     """Sign a message with the wallet's private key"""
     message_hash = encode_defunct(text=message)
