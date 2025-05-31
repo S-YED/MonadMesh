@@ -1,6 +1,6 @@
 # ⚡ MonadMesh – Decentralized Serverless Functions with Peer-to-Peer Parallel Execution
 
-**MonadMesh** is a decentralized compute network that enables developers to submit pure functions (in WASM or Python), which are then executed across a peer-to-peer (P2P) network of nodes—powered by [Monad](https://monad.xyz)'s blazing-fast parallel blockchain.
+**MonadMesh** is a decentralized compute network that enables developers to submit pure functions (in WASM or Python), which are then executed across a peer-to-peer (P2P) network of nodes - powered by [Monad](https://monad.xyz)'s blazing-fast parallel blockchain.
 
 > 💡 Think Cloudflare Workers meets IPFS meets Monad’s superpowers.
 
@@ -15,25 +15,27 @@
 ## 📌 Features
 
 ### 🧠 Smart Function Submission
-- WASM/Python function input
-- Monaco-powered code editor
+- WASM/Python function input with syntax highlighting
+- Monaco-powered in-browser code editor with execution previews
 - MetaMask/Coinbase wallet integration (via Monad RPC)
 
 ### 📊 Real-Time Task Dashboard
-- Live status updates via WebSockets
-- Tracks job status, node assignment, and execution logs
+- Live task lifecycle updates via WebSockets
+- Tracks job status, node assignment, and execution logs in real-time
+- Individual task cards with progress indicators
 
 ### 🖼️ Result Visualization
-- JSON display and D3.js graphs for numerical results
-- Graph mode toggle for enhanced UX
+- JSON viewer for structured outputs
+- D3.js graphs to visualize numerical/computational results
+- User-friendly mode toggle: Table / JSON / Graph
 
 ### 🗺️ Peer-to-Peer Node Map
-- Visual map of active compute nodes
-- Real-time sync with testnet activity
+- Real-time interactive node map
+- Visualizes active compute participants and their geolocations (approximate)
 
 ### 🛡️ ZK-Proof Toggle *(Experimental)*
-- Toggle zero-knowledge proof generation for verifiable results
-- Designed for zkSNARK-based correctness checks
+- Toggle zero-knowledge proof generation
+- Uses zkSNARKs for correctness verification of compute tasks
 
 ---
 
@@ -46,6 +48,7 @@
 | Code Editor    | Monaco Editor                              |
 | Live Updates   | WebSockets                                 |
 | Data Viz       | D3.js                                      |
+| Backend        | Python-based Task Orchestrator             |
 
 ---
 
@@ -54,19 +57,19 @@
 ### 🔁 Workflow
 
 1. 📝 **Submit Function**:  
-   User writes a pure function in Python/WASM via the frontend.
+   User writes a pure function in Python/WASM via the frontend submission panel.
 
 2. 🧠 **Task Orchestration**:  
-   A Python orchestrator distributes the task to participating P2P nodes.
+   A Python orchestrator handles routing to P2P nodes and initiates compute requests.
 
 3. 🔗 **On-Chain Tracking**:  
-   Monad smart contracts handle task hash, node states, and result commits.
+   Monad smart contracts log the compute task hashes and handle execution verification.
 
 4. ⚙️ **Parallel Execution**:  
-   Nodes compute the task in parallel and submit the results on-chain.
+   Nodes compute the task in parallel; results are submitted and verified on-chain.
 
 5. 📊 **Frontend Display**:  
-   Results are visualized on the dashboard with live WebSocket updates.
+   Live results appear via WebSocket updates; visualized through graphs or structured data views.
 
 ---
 
@@ -75,6 +78,16 @@
 ![MonadMesh Architecture](https://your-diagram-url.com)
 
 *(You can replace this with a real diagram or link)*
+
+---
+
+## 🚀 Upscaling & Roadmap
+
+- **ZK-Proofs for Result Verification** – Full zkSNARK integration.
+- **Monad-Specific L1 Optimizations** – Further leverage Monad’s parallelism.
+- **IPFS Integration** – For handling large datasets and input payloads.
+- **Persistent State Storage** – Integrating off-chain storage or L2 solutions.
+- **Improved Developer UX** – Better templates, task previews, and testnet faucet integration.
 
 ---
 
@@ -90,4 +103,37 @@ npm install
 
 # Run the development server
 npm run dev
+``` 
+
+## 🤝 Contributing
+
+Feel free to fork the repo, open issues, or suggest new features. We welcome contributors!
+
+```bash
+# Create a new branch
+git checkout -b feature/your-feature-name
+
+# Push and open a PR
+git push origin feature/your-feature-name
 ```
+
+## 👥 Collaborators
+
+This project was built with ♥ by:
+
+- **Your Name** – [@s-yed](https://github.com/s-yed)  
+- **Collaborator 1** – [@drraghavendra](https://github.com/drraghavendra)  
+- **Collaborator 2** – [@scienmanas](https://github.com/scienmanas)
+
+We built MonadMesh during the [Monad Blitz Bangalore 2025](https://lu.ma/0k7yvinp?tk=8SHdBN) hackathon, and are continuing to evolve it for open-source and production deployment.
+
+## 📄 License
+
+MIT License. See [LICENSE](./LICENSE) for more details.
+
+## 💬 Connect With Us
+
+Have feedback or want to collaborate?  
+- Twitter: [@yourhandle](https://twitter.com/SKM_Ahmed1)  
+- Discord: [Join our dev chat](https://discord.gg/ahmed_indian)  
+- Email: syedkhajamoinuddin293@gmail.com
