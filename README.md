@@ -76,7 +76,11 @@
 ## 🧱 Architecture Diagram
 
 ![MonadMesh Architecture](https://github.com/S-YED/MonadMesh/blob/main/Assets/Architecture%20Diagram.png)
-![MonadMesh ArchitectureFlow](https://github.com/S-YED/MonadMesh/blob/main/Assets/Architecture%20Flow.png)
+
+## 🧱 Architecture Flow State
+
+
+![MonadMesh Architecture Flow State](https://github.com/S-YED/MonadMesh/blob/main/Assets/Architecture%20Flow.png)
 
 
 
