@@ -1,0 +1,29 @@
+pragma solidity ^0.8.0;
+
+contract ProofVerifier {
+    struct VerificationResult {
+        bool success;
+        string error;
+    }
+    
+    mapping(bytes32 => VerificationResult) public taskVerifications;
+    
+    event ProofVerified(bytes32 indexed taskId, bool success);
+
+    function verifyProof(
+        bytes32 _taskId,
+        bytes calldata _proof,
+        bytes32[] calldata _inputs
+    ) external returns (bool) {
+        // Simplified verification - in production would use actual ZK circuits
+        bool verificationSuccess = _proof.length > 0;
+        
+        taskVerifications[_taskId] = VerificationResult({
+            success: verificationSuccess,
+            error: verificationSuccess ? "" : "Invalid proof"
+        });
+        
+        emit ProofVerified(_taskId, verificationSuccess);
+        return verificationSuccess;
+    }
+}
