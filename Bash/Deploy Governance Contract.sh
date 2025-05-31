@@ -1,1 +1,0 @@
-forge create MonadGovernance --constructor-args --rpc-url monad
