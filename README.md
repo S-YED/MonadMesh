@@ -131,9 +131,9 @@ We built MonadMesh during the [Monad Blitz Bangalore 2025](https://lu.ma/0k7yvin
 
 MIT License. See [LICENSE](./LICENSE) for more details.
 
-## 💬 Connect With Us
+## 💬 Connect With Me
 
 Have feedback or want to collaborate?  
-- Twitter: [@yourhandle](https://twitter.com/SKM_Ahmed1)  
-- Discord: [Join our dev chat](https://discord.gg/ahmed_indian)  
+- Twitter: [X](https://twitter.com/SKM_Ahmed1)  
+- Discord: [Join my dev chat](https://discord.gg/ahmed_indian)  
 - Email: syedkhajamoinuddin293@gmail.com
